@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:layout_marginVertical="20dp"
+        android:id="@+id/title"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/btnlistview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:width="200dp"
+        android:hint="List View"
+        android:textColorHint="@color/white" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnimagelistview"
+        android:layout_below="@id/btnlistview"
+        android:hint="Image ListView"
+        android:textColorHint="@color/white"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:width="200dp"
+        />
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btngridview"
+        android:layout_below="@id/btnimagelistview"
+        android:hint="Grid View"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:width="200dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HappyHacking!"
+            android:textSize="60sp"
+            android:layout_marginVertical="100dp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
